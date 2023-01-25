@@ -25,6 +25,32 @@ h1, h2, h3, span, a {
     color: #fff;
 }
 
+main h2, h3 {
+    color: #000000;
+}
+
+.item-info h2 {
+    font-size: 20px;
+}
+
+.item-info h3, span {
+    font-size: 15px;
+}
+
+.item-info h3 {
+    font-weight: 300;
+}
+
+.item-info span {
+    color: red;
+}
+
+.item-info :nth-child(4) {
+    color: #000000;
+    text-decoration: line-through;
+    padding-left: 10px;
+}
+
 /* 
 -------------
 General
@@ -46,6 +72,7 @@ ul {
 
 .img-fluid {
     width: 100%;
+    display: block;
 }
 
 /* 
@@ -60,6 +87,7 @@ header {
    top: 0;
    right: 0;
    left: 0;
+   z-index: 200;
    padding: 10px 0; 
 }
 
@@ -77,3 +105,88 @@ header .nav-list {
 header .logo-container {
     width: 100px;
 }
+
+/* 
+-------------
+Main
+------------- 
+*/
+
+main .container {
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+main .container .item {
+    width: calc(100% / 3 - 30px);
+}
+
+main .container .item:hover .img-fluid.second {
+    opacity: 1;
+}
+
+main .container .item:hover .img-fluid.first {
+    opacity: 0;
+}
+
+main .container .item .item-img {
+    position: relative;
+}
+
+main .container .item .item-img .second {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+main .container .item .item-img .img-fluid.first {
+    transition: all .4s ease-in-out;
+}
+
+main .container .item .item-img .like-box,
+.label-container {
+    position: absolute;
+    display: inline-block;
+}
+
+.like-box {
+    background-color: #fff;
+    color: black;
+    padding: 10px 15px;
+    top: 20px;
+    right: 0;
+}
+
+.like-box:hover {
+    color: red;
+}
+
+.label-container {
+    bottom: 30px;
+    left: 0;
+    font-size: 10px;
+}
+
+.item-discount, .item-label {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.item-discount {
+    background-color: red;
+}
+
+.item-label {
+    background-color: green;
+}
+
+.item-info {
+    padding: 10px 0;
+}
+
+
+
