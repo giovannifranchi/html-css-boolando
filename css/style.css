@@ -1,11 +1,79 @@
-/*
+/* 
 -------------
 Reset
--------------
+------------- 
 */
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* 
+-------------
+Typo
+------------- 
+*/
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, span, a {
+    color: #fff;
+}
+
+/* 
+-------------
+General
+------------- 
+*/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+/* 
+-------------
+Header
+------------- 
+*/
+
+header {
+   background-color: #ff6900;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   padding: 10px 0; 
+}
+
+header .container, .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-list {
+    gap: 20px;
+}
+
+
+header .logo-container {
+    width: 100px;
 }
