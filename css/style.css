@@ -188,5 +188,39 @@ main .container .item .item-img .like-box,
     padding: 10px 0;
 }
 
+/* 
+-------------
+Footer
+------------- 
+*/
 
+footer {
+    background-color: #1a1a1a;
+    border: 1px solid #fff;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 16px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    gap: 10px;
+}
+
+.copyright-section h2 {
+    font-size: 20px;
+}
+
+.copyright-section ul li a {
+    font-size: 12px;
+}
 
